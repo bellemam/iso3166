@@ -1,8 +1,7 @@
 ﻿/*
  * ISO 3166-1 country codes
  *
- * Data source: http://en.wikipedia.org/wiki/ISO_3166-1
- * License: http://creativecommons.org/licenses/by-sa/3.0/
+ * Last check against the official ISO 3166 as on https://www.iso.org/obp/ui/#search: 8th January 2020.
  */
 namespace ISO3166
 {
@@ -24,7 +23,6 @@ namespace ISO3166
         public static readonly Country[] List = new[]
         {
             new Country("Afghanistan", "AF", "AFG", "004"),
-            new Country("Åland Islands", "AX", "ALA", "248"),
             new Country("Albania", "AL", "ALB", "008"),
             new Country("Algeria", "DZ", "DZA", "012"),
             new Country("American Samoa", "AS", "ASM", "016"),
@@ -272,6 +270,7 @@ namespace ISO3166
             new Country("Yemen", "YE", "YEM", "887"),
             new Country("Zambia", "ZM", "ZMB", "894"),
             new Country("Zimbabwe", "ZW", "ZWE", "716"),
+            new Country("Åland Islands", "AX", "ALA", "248")            
         };
     }
 }

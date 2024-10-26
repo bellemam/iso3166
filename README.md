@@ -1,7 +1,8 @@
 ISO 3166-1 Country List
 =======================
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ta4hrrhat5fburmo/branch/master?svg=true)](https://ci.appveyor.com/project/andersnm/iso3166/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/4llq6n8yywh4umes/branch/master?svg=true)](https://ci.appveyor.com/project/schourode/iso3166/branch/master)
+[![NuGet Release](https://img.shields.io/nuget/v/ISO3166.svg)](https://www.nuget.org/packages/ISO3166)
 
 ## Install via NuGet
 
@@ -15,13 +16,13 @@ PM> Install-Package ISO3166
 
 ## Usage
 
-```
+```c#
 Country[] countries = ISO3166.Country.List;
 ```
 
 ## Country Model
 
-```
+```c#
 public string Name { get; private set; }
 public string TwoLetterCode { get; private set; }
 public string ThreeLetterCode { get; private set; }
@@ -30,6 +31,6 @@ public string NumericCode { get; private set; }
 public static readonly Country[] List = new[] {...};
 ```
 
-Data source: http://en.wikipedia.org/wiki/ISO_3166-1
+Last check against the official ISO 3166 as on https://www.iso.org/obp/ui/#search: 8th January 2020
 
-License: CC BY-SA 3.0
+License: MIT
